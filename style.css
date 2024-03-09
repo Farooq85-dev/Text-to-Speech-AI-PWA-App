@@ -1,0 +1,232 @@
+* {
+    font-family: Glory;
+}
+    
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.innerFrom {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    gap: 20px;
+}
+
+.innerFrom>h1 {
+    margin: 0px;
+}
+
+.innerFrom p {
+    margin-bottom: 10px;
+}
+
+.inputPassword,
+.inputRetypePassword,
+.inputEmail,
+.submitBtn {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    outline: none;
+}
+
+.inputPassword,
+.inputRetypePassword {
+    position: relative;
+}
+
+#icon1 {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+#icon2 {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.submitBtn>button {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 156, 18);
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+.submitBtn p{
+    margin-bottom: 0px;
+}
+
+/* AI Css */
+.maincard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.innerVoice {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    gap: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.textArea {
+    width: 100%;
+}
+
+textarea {
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+}
+
+.selcetVoice {
+    width: 100%;
+}
+
+#select {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.playBtn {
+    width: 100%;
+    position: relative;
+}
+
+#play {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 156, 18);
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+#playIcon {
+    position: absolute;
+    top: 25%;
+    right: 60%;
+}
+
+/* Toastr Css */
+#toast-container>div:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+#toast-container>div {
+    box-shadow: none;
+    opacity: 1;
+}
+
+/* Theme Css */
+
+.themeMain {
+    box-sizing: border-box;
+}
+
+.themeMain {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 1s linear;
+}
+
+body.dark {
+    background-color: #373b47;
+}
+
+body.dark h1,
+body.dark p {
+    color: white;
+}
+
+
+/* #9b59b6 */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #f29f12;
+}
+
+.fa-sun {
+    color: #f29f12;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
